@@ -27,7 +27,11 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://raw.githubusercontent.com" />
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/full_logo.png" />
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/short_logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -36,14 +40,14 @@
   <header class="nav-wrapper" id="navbar">
     <nav class="nav container">
       <a href="#" class="nav-logo">
-        <img src="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/short_logo.png" alt="Afanasenka Handyman Services" class="nav-logo-img" />
+        <img src="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/short_logo.png" alt="Afanasenka Handyman Services" class="nav-logo-img" width="200" height="56" />
       </a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#why-us">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="tel:+14242490414" class="btn btn-primary nav-cta">📞 Call Now</a></li>
+        <li><a href="tel:+14242490414" class="btn btn-primary nav-cta">Call Now</a></li>
       </ul>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -58,21 +62,19 @@
     <div class="hero-left">
       <div class="hero-left-inner">
 
-        <p class="hero-eyebrow">Orange County, CA</p>
+        <p class="hero-eyebrow">Serving All of Orange County, CA</p>
 
         <h1 class="hero-title">
-          Finally — A Handyman<br />Who Shows Up and Fixes It
+          Your Trusted Handyman<br />in Orange County
         </h1>
 
-        <p class="hero-license-line">Reliable &nbsp;·&nbsp; On Time &nbsp;·&nbsp; Done Right</p>
-
         <p class="hero-sub">
-          Same-day service. No runaround. No surprises.
+          Same-day repairs. Upfront pricing. No runaround, no surprises.
         </p>
 
         <div class="hero-actions">
           <a href="tel:+14242490414" class="btn btn-primary btn-lg">
-            📞 Call Now: (424) 249-0414
+            Call Now: (424) 249-0414
           </a>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSelJyZ_koh1a0A4ocHwTzat5wtbwH6ivnWTQcF7WB2MaH7mAQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-outline btn-lg">Get Free Estimate</a>
         </div>
@@ -93,7 +95,8 @@
         src="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/full_logo.png"
         alt="Afanasenka Handyman Services"
         class="hero-logo-img"
-        loading="eager"
+        width="520" height="400"
+        fetchpriority="high"
       />
     </div>
 
@@ -110,7 +113,7 @@
       <div class="services-grid">
 
         <div class="service-card">
-          <div class="service-icon" style="background:#fdf2f2;">💧</div>
+          <div class="service-icon">⚙</div>
           <h3>Plumbing Repairs</h3>
           <p>A dripping faucet wastes thousands of gallons a year — and money. We fix it fast, clean, and make sure it won't happen again.</p>
           <ul class="service-list">
@@ -123,7 +126,7 @@
 
         <div class="service-card featured-service">
           <div class="featured-badge">Most Popular</div>
-          <div class="service-icon" style="background:#fdf2f2;">🏗️</div>
+          <div class="service-icon">▦</div>
           <h3>Drywall Repair</h3>
           <p>Holes and cracks make your whole home look neglected. We patch and texture-match so well, you won't know it was ever damaged.</p>
           <ul class="service-list">
@@ -135,7 +138,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon" style="background:#f7f7f7;">🎨</div>
+          <div class="service-icon">◐</div>
           <h3>Painting</h3>
           <p>Nothing refreshes a room faster — when it's done properly. We prep right, cut sharp lines, and leave no drips, mess, or excuses.</p>
           <ul class="service-list">
@@ -147,7 +150,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon" style="background:#f7f7f7;">⚡</div>
+          <div class="service-icon">⚡</div>
           <h3>Electrical Work</h3>
           <p>Flickering lights and loose outlets aren't just annoying — they're a safety risk. We handle it correctly so you don't have to worry about it.</p>
           <ul class="service-list">
@@ -159,7 +162,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon" style="background:#fdf2f2;">🚪</div>
+          <div class="service-icon">⊞</div>
           <h3>Doors &amp; Windows</h3>
           <p>A sticking door or broken lock is a daily frustration — and a security issue. We get everything opening, closing, and locking like new.</p>
           <ul class="service-list">
@@ -171,7 +174,7 @@
         </div>
 
         <div class="service-card">
-          <div class="service-icon" style="background:#f7f7f7;">🔨</div>
+          <div class="service-icon">⚙</div>
           <h3>General Repairs &amp; Assembly</h3>
           <p>Got a list of "I'll get to it someday" tasks? We knock them all out in one visit so you can finally stop looking at them.</p>
           <ul class="service-list">
@@ -196,28 +199,28 @@
           <p class="why-desc">Tired of contractors who don't call back, show up late, or double the quote at the end? That stops here. We're a local, owner-operated business — and our reputation depends on making you happy.</p>
           <div class="why-features">
             <div class="why-feature">
-              <div class="why-icon">✅</div>
+              <div class="why-icon">✓</div>
               <div>
                 <strong>Background Checked &amp; Professional</strong>
                 <p>You're inviting someone into your home — you deserve to know they're trustworthy and accountable.</p>
               </div>
             </div>
             <div class="why-feature">
-              <div class="why-icon">⚡</div>
+              <div class="why-icon">✓</div>
               <div>
                 <strong>Fast Response Time</strong>
                 <p>Call in the morning, often fixed by afternoon. We don't make you wait weeks for a simple repair.</p>
               </div>
             </div>
             <div class="why-feature">
-              <div class="why-icon">💰</div>
+              <div class="why-icon">✓</div>
               <div>
                 <strong>Upfront, Honest Pricing</strong>
                 <p>You'll have a clear price before we touch anything. No surprise add-ons when the job is done.</p>
               </div>
             </div>
             <div class="why-feature">
-              <div class="why-icon">🏆</div>
+              <div class="why-icon">✓</div>
               <div>
                 <strong>Work That Actually Lasts</strong>
                 <p>We don't do quick patches that fail in six months. Every repair is done to stay fixed.</p>
@@ -293,7 +296,6 @@
           <div class="quick-item"><span>Outlet / switch</span><span class="price-tag">$100–$130</span></div>
           <div class="quick-item"><span>Interior room paint</span><span class="price-tag">$500–$1,000</span></div>
           <div class="quick-item"><span>Toilet replacement</span><span class="price-tag">$180–$250</span></div>
-          <div class="quick-item"><span>Door repair</span><span class="price-tag">$120–$180</span></div>
           <div class="quick-item"><span>Handle replacement</span><span class="price-tag">$100</span></div>
           <div class="quick-item"><span>TV / shelf install</span><span class="price-tag">$180</span></div>
         </div>
@@ -306,8 +308,8 @@
     <div class="container">
       <div class="area-inner">
         <div class="area-text">
-          <h2>Orange County</h2>
-          <p>Free estimates. No travel fees. Same-day service available across the county.</p>
+          <h2>Handyman Service Area</h2>
+          <p>Free estimates. No travel fees. Same-day service across Orange County.</p>
         </div>
         <div class="area-cities">
           <a href="handyman-irvine-ca.html" class="area-city-link">Irvine</a>
@@ -317,8 +319,7 @@
           <a href="handyman-huntington-beach-ca.html" class="area-city-link">Huntington Beach</a>
           <a href="handyman-costa-mesa-ca.html" class="area-city-link">Costa Mesa</a>
           <a href="handyman-newport-beach-ca.html" class="area-city-link">Newport Beach</a>
-          <a href="handyman-corona-ca.html" class="area-city-link">Corona</a>
-          <span>+ All of Southern California</span>
+          <span>+ All of Orange County</span>
         </div>
       </div>
     </div>
@@ -346,10 +347,6 @@
           </ul>
         </div>
         <div class="cities-col">
-          <h3 class="cities-col-title">Also Serving</h3>
-          <ul class="cities-list">
-            <li><a href="handyman-corona-ca.html">Handyman in Corona, CA</a></li>
-          </ul>
           <div class="cities-keyword-block">
             <p>Looking for a <strong>handyman near me</strong> in Orange County? We cover the entire county with same-day availability, upfront pricing, and no-nonsense repairs.</p>
           </div>
@@ -462,7 +459,7 @@
       </div>
 
       <div class="testimonials-cta">
-        <a href="tel:+14242490414" class="btn btn-primary btn-lg">📞 Call Now — Get Your Free Estimate</a>
+        <a href="tel:+14242490414" class="btn btn-primary btn-lg">Call Now — Get Your Free Estimate</a>
       </div>
     </div>
   </section>
@@ -475,21 +472,21 @@
       <div class="contact-top">
         <div class="contact-methods-row">
           <a href="tel:+14242490414" class="contact-method">
-            <div class="method-icon">📞</div>
+            <div class="method-icon">☎</div>
             <div>
               <strong>Call or Text Now</strong>
               <span>(424) 249-0414</span>
             </div>
           </a>
           <a href="mailto:afanasenkaservices@gmail.com" class="contact-method">
-            <div class="method-icon">✉️</div>
+            <div class="method-icon">✉</div>
             <div>
               <strong>Email</strong>
               <span>afanasenkaservices@gmail.com</span>
             </div>
           </a>
           <div class="contact-method">
-            <div class="method-icon">🕐</div>
+            <div class="method-icon">◷</div>
             <div>
               <strong>Hours</strong>
               <span>Mon–Fri 10am–8pm · Sat–Sun 10am–5pm</span>
@@ -498,7 +495,7 @@
         </div>
 
         <div class="cta-banner">
-          <p>⚡ <strong>Same-day slots fill fast.</strong> Call now to grab yours before it's gone.</p>
+          <p><strong>Same-day slots fill fast.</strong> Call now to grab yours before it's gone.</p>
           <a href="tel:+14242490414" class="btn btn-primary">Call for Same-Day Service</a>
         </div>
       </div>
@@ -527,7 +524,7 @@
               Open Estimate Form ↗
             </a>
             <a href="tel:+14242490414" class="btn btn-secondary-outline btn-lg btn-full">
-              📞 Call or Text Now: (424) 249-0414
+              Call or Text Now: (424) 249-0414
             </a>
           </div>
 
@@ -543,7 +540,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#">
-            <span class="footer-logo-wrap"><img src="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/short_logo.png" alt="Afanasenka Handyman Services" class="footer-logo-img" /></span>
+            <span class="footer-logo-wrap"><img src="https://raw.githubusercontent.com/zmiceramaroka/afanasenkahandyman/main/short_logo.png" alt="Afanasenka Handyman Services" class="footer-logo-img" width="160" height="32" loading="lazy" /></span>
           </a>
           <p>Local handyman services across Orange County. We show up, we fix it, and we stand behind our work.</p>
         </div>
@@ -568,16 +565,15 @@
             <li><a href="handyman-huntington-beach-ca.html">Handyman Huntington Beach</a></li>
             <li><a href="handyman-costa-mesa-ca.html">Handyman Costa Mesa</a></li>
             <li><a href="handyman-newport-beach-ca.html">Handyman Newport Beach</a></li>
-            <li><a href="handyman-corona-ca.html">Handyman Corona</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+14242490414">📞 (424) 249-0414</a></li>
-            <li><a href="mailto:afanasenkaservices@gmail.com">✉️ afanasenkaservices@gmail.com</a></li>
-            <li>🕐 Mon–Fri 10am–8pm</li>
-            <li>🕐 Sat–Sun 10am–5pm</li>
+            <li><a href="tel:+14242490414">(424) 249-0414</a></li>
+            <li><a href="mailto:afanasenkaservices@gmail.com">afanasenkaservices@gmail.com</a></li>
+            <li>Mon–Fri 10am–8pm</li>
+            <li>Sat–Sun 10am–5pm</li>
           </ul>
           <a href="tel:+14242490414" class="btn btn-primary" style="margin-top:1rem;">Call Now</a>
         </div>
@@ -594,9 +590,9 @@
 
   <!-- STICKY MOBILE CTA -->
   <div class="sticky-cta" id="sticky-cta">
-    <a href="tel:+14242490414" class="btn btn-primary btn-full">📞 Call Now: (424) 249-0414</a>
+    <a href="tel:+14242490414" class="btn btn-primary btn-full">Call Now: (424) 249-0414</a>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
